@@ -140,7 +140,7 @@
 
 <button
   @click="mobileMenuOpen = !mobileMenuOpen"
-  class="md:hidden text-2xl text-black"
+  class="md:hidden text-3xl text-black"
 >
   <span v-if="!mobileMenuOpen" >☰</span>
   <span v-else>✕</span>

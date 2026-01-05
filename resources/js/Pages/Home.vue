@@ -10,11 +10,11 @@
 
 
 <div class="absolute inset-0 px-4 sm:px-6 lg:px-10 
-            h-[70vh] flex flex-col justify-center items-center gap-4
-            text-center  ">
+            md:h-[70vh] h-[45vh] flex flex-col justify-center items-center gap-4
+            text-center ">
 
   <!-- Heading Row -->
-  <div class="w-full flex flex-wrap   justify-center items-center gap-2">
+  <div class="w-full flex flex-wrap  justify-center items-center gap-2">
 
     <hr class="border-2 w-8 sm:w-12 border-[#D4AF37]">
 
@@ -509,7 +509,6 @@ import { Swiper, SwiperSlide } from "swiper/vue";
 import { Navigation, Pagination } from "swiper/modules";
 
 import img1 from "@/images/sofa-1.jpg"
-import img2 from "@/images/sofa-2.jpg"
 import img4 from "@/images/dinning-2.jpg"
 import img5 from "@/images/dinning-7.jpg"
 import img6 from "@/images/arm-2.jpg"
@@ -520,21 +519,21 @@ import img10 from "@/images/arm-5.jpg"
 import img11 from "@/images/arm-6.jpg"
 import img12 from "@/images/round-6.jpg"
 import img13 from "@/images/arm-8.jpg"
-import img14 from "@/images/round-3.jpg"
-import img15 from "@/images/chair-2.jpg"
+
+
 import img16 from "@/images/chair-3.jpg"
 import img17 from "@/images/office-6.jpg"
-import img18 from "@/images/chair-5.jpg"
+
 import img19 from "@/images/chair-6.jpg"
 import img20 from "@/images/chair-8.jpg"
 import img21 from "@/images/chair-10.jpg"
 import img22 from "@/images/chair-12.jpg"
-import img23 from "@/images/chair-14.jpg"
-import img24 from "@/images/chair-18.jpg"
 
 
 
-const galleryImages = [img1, img2, img4, img5, img6, img7, img8, img9, img10, img11, img12, img13, img14, img15, img16, img17, img18, img19, img20, img21, img22, img23, img24];
+
+
+const galleryImages = [img1,img4, img5, img6, img7, img8, img9, img10, img11, img12, img13, img16, img17, img19, img20, img21, img22];
 
 
 
