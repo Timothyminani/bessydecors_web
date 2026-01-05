@@ -105,7 +105,7 @@
         <img
           :src="`/storage/${product.image_1}`"
           :alt="product.name"
-          class="w-full h-48 object-cover"
+          class="w-full h-60 object-cover"
         />
         <div class="p-4   ">
           <h3 class="text-lg font-semibold mb-2">{{ product.name }}</h3>
@@ -176,9 +176,9 @@ import "swiper/css/navigation";
 import "swiper/css/pagination";
 
 // Import local images
-import img1 from "@/images/dining1.jpg"
-import img2 from "@/images/dining2.jpg"
-import img3 from "@/images/dining3.webp"
+import img1 from "@/images/sofa-1.jpg"
+import img2 from "@/images/dinning-2.jpg"
+import img3 from "@/images/bed-2.jpg"
 
 const slides = [
   {

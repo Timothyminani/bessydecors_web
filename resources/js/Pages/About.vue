@@ -42,7 +42,7 @@ From timeless styles to modern elegance, each piece is created with care, intent
 
     <!-- Mission -->
     <section class="max-w-4xl mx-auto bg-white rounded-2xl shadow p-8 mb-12">
-      <h2 class="text-2xl font-semibold mb-4 text-yellow-600">Our Mission</h2>
+      <h2 class="text-2xl font-semibold mb-4 text-black">Our Mission</h2>
 
       <p class="mb-6 leading-relaxed text-gray-700">
         At Bessy Decors, our mission is to transform living spaces into places of

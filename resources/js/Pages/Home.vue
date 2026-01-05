@@ -2,7 +2,7 @@
   <PublicLayout>
     <div class="min-h-screen ">
 
-    <div class="relative md:px-6 h-[90vh]   bg-no-repeat bg-container"
+    <div class="relative md:px-6 md:h-[90vh] h-[55vh]  bg-no-repeat bg-container"
     :style="{ backgroundImage: `url(${DemoImage})`, backgroundSize: 'cover', backgroundPosition: 'center' }"
     >
     
@@ -374,19 +374,19 @@
 
     <div class="flex flex-col justify-center items-center gap-4 p-6 shadow-lg shadow-gray-400 rounded-lg max-w-sm">
         <UserCircleIcon class="w-12 h-12 text-[#D4AF37]" />
-        <h3 class="text-lg font-semibold">John Doe</h3>
+        <h3 class="text-lg font-semibold">Mark Paul</h3>
         <p class="text-center text-gray-600">"I recently purchased a sofa from Dfuniture, and I couldn't be happier. The quality is outstanding, and it has transformed my living room!"</p>
     </div>
 
     <div class="flex flex-col justify-center items-center gap-4 p-6 shadow-lg shadow-gray-400 rounded-lg max-w-sm">
         <UserCircleIcon class="w-12 h-12 text-[#D4AF37]" />
-        <h3 class="text-lg font-semibold">Jane Smith</h3>
+        <h3 class="text-lg font-semibold">Jane Wairimo</h3>
         <p class="text-center text-gray-600">"The custom dining table I ordered exceeded my expectations. The craftsmanship is impeccable, and it fits perfectly in my home."</p>
     </div>
 
     <div class="md:flex hidden flex-col justify-center items-center gap-4 p-6 shadow-lg shadow-gray-400 rounded-lg max-w-sm">
         <UserCircleIcon class="w-12 h-12 text-[#D4AF37]" />
-        <h3 class="text-lg font-semibold">Michael Brown</h3>
+        <h3 class="text-lg font-semibold">Michael Kipchumba</h3>
         <p class="text-center text-gray-600">"Exceptional service from start to finish. The team at Dfuniture helped me choose the  perfect pieces for my office space."</p  >
         </div>
 
@@ -430,7 +430,7 @@
 
       <swiper-slide  v-for="(image, index) in galleryImages" :key="index">
         <div class="rounded-lg md:w-auto w-full shadow-2xl shadow-gray-400 p-4 group bg-white ">
-         <img :src="image" class="w-full md:h-100 h-80 object-cover rounded transition-transform duration-500 group-hover:scale-90" />
+         <img :src="image" class="w-full  md:h-100 h-80  rounded transition-transform duration-500 group-hover:scale-90" />
         </div>
       </swiper-slide>
     
@@ -508,13 +508,33 @@ import Office from '@/images/office4.jpg'
 import { Swiper, SwiperSlide } from "swiper/vue";
 import { Navigation, Pagination } from "swiper/modules";
 
-import img1 from "@/images/dining1.jpg"
-import img2 from "@/images/dining2.jpg"
-import img3 from "@/images/dining3.webp"
-import img4 from "@/images/dining4.jpg"
-import img5 from "@/images/dining5.webp"
+import img1 from "@/images/sofa-1.jpg"
+import img2 from "@/images/sofa-2.jpg"
+import img4 from "@/images/dinning-2.jpg"
+import img5 from "@/images/dinning-7.jpg"
+import img6 from "@/images/arm-2.jpg"
+import img7 from "@/images/table-5.jpg"
+import img8 from "@/images/arm-3.jpg"
+import img9 from "@/images/arm-4.jpg"
+import img10 from "@/images/arm-5.jpg"
+import img11 from "@/images/arm-6.jpg"
+import img12 from "@/images/round-6.jpg"
+import img13 from "@/images/arm-8.jpg"
+import img14 from "@/images/round-3.jpg"
+import img15 from "@/images/chair-2.jpg"
+import img16 from "@/images/chair-3.jpg"
+import img17 from "@/images/office-6.jpg"
+import img18 from "@/images/chair-5.jpg"
+import img19 from "@/images/chair-6.jpg"
+import img20 from "@/images/chair-8.jpg"
+import img21 from "@/images/chair-10.jpg"
+import img22 from "@/images/chair-12.jpg"
+import img23 from "@/images/chair-14.jpg"
+import img24 from "@/images/chair-18.jpg"
 
-const galleryImages = [img1, img2, img3, img4, img5]
+
+
+const galleryImages = [img1, img2, img4, img5, img6, img7, img8, img9, img10, img11, img12, img13, img14, img15, img16, img17, img18, img19, img20, img21, img22, img23, img24];
 
 
 

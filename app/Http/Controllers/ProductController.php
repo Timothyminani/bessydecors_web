@@ -57,7 +57,7 @@ public function ShowProducts(Request $request)
 
 
 
-    $All_products = $query->paginate(12)->withQueryString();
+    $All_products = $query->paginate(20)->withQueryString();
 
     return inertia('Products/All_products', [
         'All_products' => $All_products,

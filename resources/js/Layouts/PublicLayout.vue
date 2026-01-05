@@ -3,10 +3,10 @@
 
     <!-- NAVIGATION BAR -->
     <header class="shadow-sm bg-white fixed top-0 left-0 w-full z-50 ">
-      <nav class="max-w-7xl mx-auto md:pr-0 pr-2 md:px-6 flex items-center bg-white md:justify-between">
+      <nav class="max-w-7xl mx-auto md:pr-0 pr-2 md:px-6 flex items-center bg-white justify-between">
         
         <!-- LOGO -->
-        <h1 class="text-2xl  font-bold text-black">
+        <h1 class="text-2xl font-bold text-black">
          <img :src="LogoDemo" alt="Profile Picture" class="w-28 md:w-33 h-19"/>
         </h1>
 
@@ -97,7 +97,7 @@
 
 
 <!-- CENTER: SEARCH BAR -->
-    <div class="flex justify-center items-center  w-1/2 md:w-1/4 ">
+    <div class="md:flex hidden justify-center items-center  w-1/2 md:w-1/4 ">
       <div class="relative">
        <form @submit.prevent="submitSearch" class="flex items-center gap-2">
     <input
@@ -119,11 +119,11 @@
     </div>
 
     <!-- RIGHT: ICONS -->
-    <div class="flex items-center  gap-0 md:gap-6 px-8">
+    <div class="flex items-center  md:justify-center justify-between md:py-0 py-4 gap-7 md:gap-6 md:px-8 ">
 
       <!-- CART ICON -->
       <div class="relative cursor-pointer hover:text-black">
-        <svg class="w-7 h-7 text-gray-600" fill="none" stroke="currentColor" stroke-width="2"
+        <svg class="w-7 h-7 text-3xl md:text-auto text-gray-600" fill="none" stroke="currentColor" stroke-width="2"
           viewBox="0 0 24 24">
           <path d="M3 3h2l.4 2M7 13h10l4-8H5.4"></path>
           <circle cx="9" cy="21" r="1"></circle>
@@ -134,7 +134,20 @@
         <span class="absolute -top-2 -right-2 bg-[#D4AF37] text-white text-xs rounded-full px-2 py-0.5">
           0
         </span>
+
       </div>
+
+
+<button
+  @click="mobileMenuOpen = !mobileMenuOpen"
+  class="md:hidden text-2xl text-black"
+>
+  <span v-if="!mobileMenuOpen" >☰</span>
+  <span v-else>✕</span>
+</button>
+
+
+
 
       <!-- USER DROP-DOWN (HOVER) -->
       <div class="relative group hidden md:flex ">
@@ -158,7 +171,7 @@
           </Link>
 
           <Link 
-            href="/register" 
+            href="/" 
             class="block px-4 py-2 hover:bg-gray-100 text-gray-700">
             Sign Up
           </Link>
@@ -170,13 +183,7 @@
 
 
 <!-- HAMBURGER BUTTON (Mobile only) -->
-<button
-  @click="mobileMenuOpen = !mobileMenuOpen"
-  class="md:hidden text-2xl text-black"
->
-  <span v-if="!mobileMenuOpen" >☰</span>
-  <span v-else>✕</span>
-</button>
+
 
         
 
@@ -196,7 +203,7 @@
       <div class="max-w-7xl mx-auto px-6 grid grid-cols-1 md:grid-cols-3 gap-6">
 
         <div>
-          <h3 class="font-semibold text-lg mb-2">Bessy Funiture</h3>
+          <h3 class="font-semibold text-lg mb-2">Bessy Furnitures</h3>
           <p class="text-gray-300 text-sm">
             Quality furniture built with passion and precision.
           </p>
@@ -206,7 +213,7 @@
           <h3 class="font-semibold text-lg mb-2">Quick Links</h3>
           <ul class="text-gray-300 space-y-1 text-sm">
             <li><Link href="/">Home</Link></li>
-            <li><Link href="/products">Products</Link></li>
+            <li><Link href="/allProducts">Products</Link></li>
             <li><Link href="/about">About</Link></li>
             <li><Link href="/contact">Contact</Link></li>
           </ul>
@@ -217,12 +224,15 @@
           <p class="text-gray-300 text-sm">Nairobi, Thika road, near TRM</p>
           <p class="text-gray-300 text-sm">Email: bessydecors@gmail.com</p>
           <p class="text-gray-300 text-sm">Phone Number: +254716635598</p>
+            
         </div>
+
+      
 
       </div>
 
       <div class="text-center text-gray-500 text-sm mt-6">
-        © 2025 Bessy Deco funiture. All Rights Reserved.
+        © 2025 Bessy Deco furniture. All Rights Reserved.
       </div>
     </footer>
 
@@ -230,6 +240,7 @@
    <a
   href="https://wa.me/254716635598"
   target="_blank"
+  title="Chat with us on Whatsapp"
   class="fixed z-100 bottom-5 right-5 bg-green-500 text-white p-3 rounded-full shadow-lg hover:bg-green-600 transition flex items-center justify-center gap-2"
 >
 
@@ -240,7 +251,7 @@
     <path d="M13.601 2.326A7.854 7.854 0 008.002 0C3.58 0 .004 3.575.004 7.997c0 1.41.368 2.788 1.066 3.999L0 16l4.113-1.043a7.932 7.932 0 003.887 1.008h.003c4.422 0 8-3.576 8-7.997a7.94 7.94 0 00-2.402-5.642zM8.003 14.48a6.46 6.46 0 01-3.292-.896l-.236-.14-2.438.618.65-2.378-.153-.244A6.471 6.471 0 011.54 8c0-3.579 2.915-6.494 6.463-6.494a6.43 6.43 0 014.585 1.907A6.43 6.43 0 0114.498 8c0 3.578-2.916 6.48-6.495 6.48zm3.79-4.83c-.206-.103-1.226-.602-1.416-.669-.19-.07-.33-.103-.47.103-.137.206-.54.668-.662.806-.122.137-.243.155-.45.052-.206-.103-.868-.319-1.653-.993-.611-.545-1.022-1.216-1.142-1.422-.12-.206-.013-.317.091-.42.093-.092.206-.24.309-.36.103-.12.137-.206.206-.343.068-.137.034-.257-.017-.36-.052-.103-.47-1.137-.644-1.553-.17-.41-.343-.355-.47-.355-.12 0-.257-.017-.397-.017-.137 0-.36.052-.548.257-.19.206-.72.703-.72 1.713 0 1.01.737 1.987.84 2.125.103.137 1.45 2.214 3.508 3.103.49.212.872.338 1.17.433.492.157.94.135 1.295.082.395-.06 1.226-.5 1.398-.985.172-.485.172-.9.12-.986-.052-.086-.19-.137-.397-.24z" />
   </svg>
 
-  Chat with us on Whatsapp
+  <span class="md:flex hidden">Chat with us on Whatsapp</span>
 </a>
 
 
